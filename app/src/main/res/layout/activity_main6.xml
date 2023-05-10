@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity6">
+    <ImageView
+        android:id="@+id/checkMark"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/successfully" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkMark"
+        android:id="@+id/celebratoryText"
+        android:text="Yay!You are within the permitted area!✅"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/green"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/Notify"
+        android:layout_below="@+id/celebratoryText"
+        android:text="Tap below button to check whether you are within the deadline"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/green"
+      />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/markAttendance"
+        android:layout_below="@id/Notify"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/green"
+        android:layout_margin="10dp"
+        android:text="Check time"/>
+</RelativeLayout>

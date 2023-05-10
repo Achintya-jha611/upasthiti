@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity2">
+
+    <!--on below line we are creating
+        a text for our app-->
+    <TextView
+        android:id="@+id/idTVHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Welcome to Upasthiti"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVHeading"
+        android:src="@drawable/clipart3"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/photo"
+        android:padding="20dp"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_marginTop="85dp"
+        android:text="Login and Mark your Today's Attendance Now!"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_700"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="LOGIN"
+        android:layout_below="@id/idTVHeading"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true"></Button>
+
+
+
+</RelativeLayout>
